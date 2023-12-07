@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Web site created using create-react-app" />
+        <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
+        <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+        <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
+        <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <title>React App</title>
+    </head>
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <button id="save-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="75" height="74" viewBox="0 0 75 74" fill="none">
+                <g filter="url(#filter0_d_1_564)">
+                    <path
+                        d="M37.5 62C54.6208 62 68.5 48.1208 68.5 31C68.5 13.8792 54.6208 0 37.5 0C20.3792 0 6.5 13.8792 6.5 31C6.5 48.1208 20.3792 62 37.5 62Z"
+                        fill="white"
+                    ></path>
+                </g>
+                <path
+                    d="M37.5 62C54.6208 62 68.5 48.1208 68.5 31C68.5 13.8792 54.6208 0 37.5 0C20.3792 0 6.5 13.8792 6.5 31C6.5 48.1208 20.3792 62 37.5 62Z"
+                    fill="white"
+                ></path>
+                <path
+                    d="M44.944 32.737V29.074H41.281V27.383H44.944V23.72H46.635V27.383H50.3V29.074H46.635V32.737H44.944ZM34.517 30.454C33.9559 30.4744 33.3965 30.38 32.8732 30.1764C32.3499 29.9728 31.8738 29.6643 31.474 29.27C31.0796 28.8702 30.7711 28.3939 30.5675 27.8704C30.3639 27.3469 30.2695 26.7873 30.29 26.226C30.2695 25.6647 30.3639 25.1052 30.5675 24.5817C30.7711 24.0582 31.0796 23.5819 31.474 23.182C31.8741 22.788 32.3504 22.4798 32.8739 22.2766C33.3974 22.0733 33.9569 21.9792 34.518 22C35.0791 21.9796 35.6385 22.0741 36.1618 22.2777C36.6851 22.4813 37.1612 22.7897 37.561 23.184C37.9554 23.5839 38.2639 24.0602 38.4675 24.5837C38.6711 25.1072 38.7656 25.6668 38.745 26.2281C38.7656 26.7893 38.6711 27.3489 38.4675 27.8723C38.2639 28.3958 37.9554 28.8721 37.561 29.272C37.1611 29.6659 36.6849 29.974 36.1616 30.1773C35.6383 30.3805 35.079 30.4747 34.518 30.454H34.517ZM25.5 39.5V36.851C25.4927 36.2202 25.6636 35.6001 25.993 35.062C26.3274 34.5206 26.8259 34.1002 27.416 33.862C28.6258 33.311 29.8838 32.8724 31.174 32.552C32.2689 32.2987 33.3892 32.1712 34.513 32.172C35.6339 32.1708 36.7512 32.2983 37.843 32.552C39.1296 32.8736 40.3842 33.3121 41.591 33.862C42.1785 34.1164 42.6782 34.5379 43.028 35.074C43.367 35.6033 43.5433 36.2205 43.535 36.849V39.498L25.5 39.5ZM27.191 37.809H41.845V36.851C41.8438 36.5461 41.7557 36.2478 41.591 35.9911C41.4308 35.7265 41.1955 35.5155 40.915 35.385C39.8353 34.8554 38.7013 34.4444 37.533 34.159C36.5414 33.9533 35.5308 33.8527 34.518 33.859C33.5007 33.8532 32.4855 33.9538 31.489 34.159C30.3143 34.4422 29.1741 34.8533 28.089 35.385C27.8108 35.5134 27.5794 35.7252 27.427 35.9911C27.2707 36.2507 27.1877 36.5479 27.187 36.851L27.191 37.809ZM34.518 28.763C34.8541 28.7736 35.1887 28.7153 35.5014 28.5916C35.8141 28.468 36.0981 28.2816 36.336 28.044C36.5736 27.8061 36.76 27.5221 36.8836 27.2094C37.0073 26.8968 37.0656 26.5621 37.055 26.226C37.0656 25.89 37.0073 25.5553 36.8836 25.2426C36.76 24.93 36.5736 24.646 36.336 24.408C36.0981 24.1705 35.8141 23.9841 35.5014 23.8604C35.1887 23.7368 34.8541 23.6785 34.518 23.6891C34.182 23.6785 33.8473 23.7368 33.5346 23.8604C33.222 23.9841 32.9379 24.1705 32.7 24.408C32.4624 24.646 32.2761 24.93 32.1524 25.2426C32.0287 25.5553 31.9704 25.89 31.981 26.226C31.9704 26.5621 32.0287 26.8968 32.1524 27.2094C32.2761 27.5221 32.4624 27.8061 32.7 28.044C32.9379 28.2816 33.222 28.468 33.5346 28.5916C33.8473 28.7153 34.182 28.7736 34.518 28.763Z"
+                    fill="#226F00"
+                ></path>
+                <defs>
+                    <filter
+                        id="filter0_d_1_564"
+                        x="0.5"
+                        y="0"
+                        width="74"
+                        height="74"
+                        filterUnits="userSpaceOnUse"
+                        color-interpolation-filters="sRGB"
+                    >
+                        <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                        <feColorMatrix
+                            in="SourceAlpha"
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                            result="hardAlpha"
+                        ></feColorMatrix>
+                        <feOffset dy="6"></feOffset>
+                        <feGaussianBlur stdDeviation="3"></feGaussianBlur>
+                        <feColorMatrix
+                            type="matrix"
+                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.161 0"
+                        ></feColorMatrix>
+                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_564"></feBlend>
+                        <feBlend
+                            mode="normal"
+                            in="SourceGraphic"
+                            in2="effect1_dropShadow_1_564"
+                            result="shape"
+                        ></feBlend>
+                    </filter>
+                </defs>
+            </svg>
+        </button>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+       <script>
+          var saveBtn = document.getElementById("save-btn");
+          console.log(saveBtn);
+              saveBtn.addEventListener("click", function () {
+                const contact__name=  document.getElementById("contact__name").innerText;
+                const contact__phone=  document.getElementById("contact__phone").innerText;
+                const contact__job_position = document.getElementById("contact__job_position").innerText;
+                const contact__email=  document.getElementById("contact__email").innerText;
+                const contact__address_work=  document.getElementById("contact__address_work").innerText;
+                const contact__cty=  document.getElementById("contact__cty").innerText;
+                const contact__url=  document.getElementById("contact__url").innerText;
+                const contact_img = "/9j/4AAQSkZJRgABAQAAAQABAAD/";
+                // Get the contact information from the website
+             
+                // create a vcard file
+          const makeVCardVersion = () => `VERSION:3.0`;
+          const makeVCardInfo = (info) => `N:${info}`;
+          const makeVCardName = (name) => `FN:${name}`;
+          const makeVCardOrg = (org) => `ORG:${org}`;
+          const makeVCardTitle = (title) => `TITLE:${title}`;
+          const makeVCardPhoto = (img) => `PHOTO;TYPE=JPEG;ENCODING=b:${img}`;
+          const makeVCardTel = (phone) => `TEL;TYPE=WORK,VOICE:${phone}`;
+          const makeVCardAdrwork = (address_work) => `ADR;TYPE=work:;;${address_work}`;
+          const makeVCardEmail = (email) => `EMAIL:${email}`;
+          const makeVCardURL = (url) => `URL:${url}`;
+          const makeVCardTimeStamp = () => `REV:${new Date().toISOString()}`;
+          
+          vcard = `BEGIN:VCARD
+\n${makeVCardVersion()}
+\n${makeVCardInfo(contact__name)}
+\n${makeVCardName(contact__name)}
+\n${makeVCardOrg(contact__cty)}
+\n${makeVCardTitle(contact__job_position)}
+\n${makeVCardPhoto(contact_img)}
+\n${makeVCardTel(contact__phone)}
+\n${makeVCardAdrwork(contact__address_work)}
+\n${makeVCardEmail(contact__email)}
+\n${makeVCardURL(contact__url)}
+\n${makeVCardTimeStamp()}
+\nEND:VCARD`;
+                var blob = new Blob([vcard], { type: "text/vcard" });
+      var url = URL.createObjectURL(blob);
+      
+      const newLink = document.createElement('a');
+                newLink.download = contact__name + ".vcf";
+                newLink.textContent = contact__name;
+                newLink.href = url;
+                
+                newLink.click();
+    });
+       </script>
+    </body>
+</html>

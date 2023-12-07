@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+body .container {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 57px;
+    padding-bottom: 41px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+}
+
+body .container .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    background-image: url('https://hcdigiz.com/vcard/nhucuong/nen.jpg');
+    background-color: #0a0000;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body .container .background__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #226f00;
+    opacity: 0.5;
+}
+
+body .logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+body .logo img {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    box-shadow: 0px 5px 8px -3px rgb(0 0 0 / 30%);
+}
+
+.contact {
+    padding-top: 38px;
+    width: 100%;
+}
+
+.contact .contact__name {
+    color: #fff;
+    -webkit-text-stroke: 0.2px #226f00;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.contact .contact__job_position {
+    color: #fff;
+    -webkit-text-stroke: 0.2px #d59300;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+}
+
+.contact .contact__company {
+    color: #fff;
+    -webkit-text-stroke: 0.2px #d59300;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contact__bottom {
+    margin-top: 48px;
+    width: 100%;
+}
+
+.contact__bottom__box {
+    display: flex;
+    align-items: center;
+    padding-top: 11.5px;
+    padding-bottom: 14.5px;
+    border-bottom: 1px solid #5f5f5f;
+    gap: 16px;
+}
+
+.contact__bottom__box:last-child {
+    border-bottom: 0;
+}
+
+.contact__bottom__box--text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.contact__bottom__box--title {
+    color: #bebebe;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact__bottom__box--content,
+.contact__bottom__box--content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    word-wrap: break-word;
+    width: 370px;
+}
+
+.nganhang {
+    margin-left: 6px;
+}
+
+#save-btn {
+
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    bottom: 41px;
+    right: calc(50% - 230px);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contact__bottom__box--content,
+    .contact__bottom__box--content a {
+        word-wrap: break-word;
+        width: 250px;
+    }
+
+    #save-btn {
+
+
+        right: 30px;
+    }
+}
