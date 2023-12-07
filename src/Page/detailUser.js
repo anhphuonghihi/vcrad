@@ -3,6 +3,7 @@ import Ima from './empty.png';
 import { useParams } from 'react-router-dom';
 import './detailUser.css';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 function DetailUser() {
     const [user, setUser] = useState([]);
     const { user_id } = useParams();
@@ -21,6 +22,9 @@ function DetailUser() {
     return (
         <div className="App">
             <div className="container">
+                <Helmet>
+                    <title>{user?.user_name}</title>
+                </Helmet>
                 <div className="background"></div>
                 <div className="background__img"></div>
                 <div className="logo">
