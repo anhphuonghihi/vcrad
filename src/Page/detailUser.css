@@ -31,10 +31,10 @@ body .container .background {
     right: 0;
     bottom: 0;
     z-index: -2;
-    background-image: url('https://hcdigiz.com/vcard/nhucuong/nen.jpg');
+    background-image: url('https://hcdigiz.com/vcard/nhucuong/img.svg');
     background-color: #0a0000;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
 }
 
 body .container .background__img {

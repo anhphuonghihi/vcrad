@@ -9,7 +9,7 @@ function DetailUser() {
     const { user_id } = useParams();
     useEffect(() => {
         const api = async () => {
-            const res = await axios.get(`https://api-business-card.onrender.com/user/${user_id}`, {
+            const res = await axios.get(`https://maacbookm3.com/businesscard/user/${user_id}`, {
                 headers: { 'x-api-key': 'z8j1jklsdmnfoiflksadnm23kszfhru38437823jhk12mn393u232' },
             });
             const dataUsers = res.data.metadata.user;
@@ -37,11 +37,11 @@ function DetailUser() {
                     </h2>
                     <span className="contact__job_position" id="contact__job_position">
                         {' '}
-                        {user === undefined ? '' : user.user_position}{' '}
+                        {user === undefined ? '' : user?.user_position}{' '}
                     </span>
                     <div className="contact__company" id="contact__cty">
                         {' '}
-                        {user === undefined ? '' : user.user_company}{' '}
+                        {user === undefined ? '' : user?.user_company}{' '}
                     </div>
                 </div>
                 <div className="contact__bottom">
@@ -199,6 +199,7 @@ function DetailUser() {
                     )}
                 </div>
             </div>
+            
         </div>
     );
 }
